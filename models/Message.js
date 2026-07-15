@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const messageSchema = new mongoose.Schema(
     {
         type: {
-            type: String, enum: ["global", "private", "room"], required: true
+            type: String, enum: ["global", "private", "room","stranger"], required: true
         },
         sender: { type: String, required: true },
         receiver: { type: String, default: null },
