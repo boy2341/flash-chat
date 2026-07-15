@@ -4,8 +4,9 @@ const friendSearchInput = document.getElementById("friendSearchInput");
 const friendRequestsContainer = document.getElementById("friendRequestsContainer");
 const addFriendBtn = document.getElementById("addFriendBtn");
 async function loadFriends() {
-    const response = await fetch(`/api/friends/${state.username}`);
-    headers = { "Authorization": `Bearer ${state.authToken}` };
+    const response = await fetch(`/api/friends/${state.username}`,{
+    headers = { "Authorization": `Bearer ${state.authToken}` }
+    });
     const result = await response.json();
     if (result.success) {
         renderFriends(result.friends);
