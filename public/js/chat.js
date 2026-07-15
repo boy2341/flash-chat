@@ -25,8 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     } catch (err) {
         console.error("Initialization Error:", err);
-        localStorage.removeItem("chat_token");
-        localStorage.removeItem("chat_username");
+ 
         window.location.href = "/views/login.html";
     }
 });
