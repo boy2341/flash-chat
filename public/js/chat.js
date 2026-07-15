@@ -26,12 +26,15 @@ window.addEventListener("DOMContentLoaded", () => {
     } catch (err) {
         console.error("Initialization Error:", err);
  
-        window.location.href = "/views/login.html";
+                if (window.UIFunctions && UIFunctions.addSystemMessage) {
+            UIFunctions.addSystemMessage("Something went wrong loading the chat page. Check the console.");
+        }
+
     }
 });
 function connectToSecureSocket() {
     UIFunctions.addSystemMessage("Connecting...");
-    state.socket = io(CLIENT_URL, {
+    state.socket = io(window.location.origin, {
         auth: { token: state.authToken }
     });
     state.socket.on("connect", () => {
