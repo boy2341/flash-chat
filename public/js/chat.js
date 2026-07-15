@@ -12,6 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
         initializeFriends();
         initializeChatRooms();
         initializeStranger();
+        loadFriendRequests();
         const params = new URLSearchParams(window.location.search);
         const dmTarget = params.get("dm");
         const roomTarget = params.get("room");
