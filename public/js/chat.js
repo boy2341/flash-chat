@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
         initializeStranger();
         const params = new URLSearchParams(window.location.search);
         const dmTarget = params.get("dm");
+        const roomTarget = params.get("room");
         const strangerMode = params.get("stranger") === "true";
         if (dmTarget) {
             state.pendingDmTarget = dmTarget;
