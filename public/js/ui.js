@@ -7,8 +7,6 @@ const roomTitleHeading = document.getElementById("roomTitleHeading");
 const statusDot = document.getElementById('statusDot');
 const backBtn = document.getElementById('backBtn');
 const usersList = document.getElementById("usersList");
-const leaveStrangerBtn = document.getElementById("leaveStrangerBtn");   // ADD
-const skipStrangerBtn = document.getElementById("skipStrangerBtn");  
 window.UI = {
     homePage,
     chatPage,
