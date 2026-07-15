@@ -20,14 +20,7 @@ async function loadFriendRequests() {
 }
 function renderFriends(friends) {
     friendsListContainer.innerHTML = "";
-    async function loadFriends() {
-        const response =
-            await fetch(`/api/friends/${state.username}`);
-        const friends =
-            await response.json();
-        renderFriends(friends);
-    }
-    friends.forEach(friend => {
+       friends.forEach(friend => {
         const btn = document.createElement("button");
         btn.textContent = friend.username;
         btn.onclick = () => {
