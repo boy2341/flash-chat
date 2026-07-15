@@ -31,7 +31,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 function connectToSecureSocket() {
     UIFunctions.addSystemMessage("Connecting...");
-    state.socket = io("http://localhost:3002", {
+    state.socket = io(CLIENT_URL, {
         auth: { token: state.authToken }
     });
     state.socket.on("connect", () => {
