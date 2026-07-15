@@ -1,5 +1,3 @@
-const { text } = require("express");
-
 const homePage = document.getElementById('homePage');
 const chatPage = document.getElementById('chatPage');
 const messagesBox = document.getElementById('messagesBox');
