@@ -19,8 +19,9 @@ window.UI = {
     messagesBox,
     roomTitleHeading,
     usersList,
-    leaveStrangerBtn,
-    skipStrangerBtn 
+    leaveStrangerBtn: document.getElementById("leaveStrangerBtn"),
+    skipStrangerBtn: document.getElementById("skipStrangerBtn")
+
 };
 function styleUserButton(button, active) {
     if (active) {
