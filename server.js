@@ -22,7 +22,6 @@ app.use("/views", express.static(path.join(__dirname, "views")));
 const userRoutes = require("./routes/users");
 const friendRoutes = require("./routes/friends");
 const chatRoomRoutes = require("./routes/chatrooms");
-const { prototype } = require('stream');
 app.use("/", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/friends", friendRoutes);
