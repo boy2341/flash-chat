@@ -26,7 +26,7 @@ function switchToGlobalRoom() {
     state.isPrivateMode = false;
     state.currentRoomId = "global";
     if (state.socket && state.socket.connected) {
-        socket.emit("leave_private_room");
+        state.socket.emit("leave_private_room");
     }
     UIFunctions.changeRoomTitle("Global Public Room");
     UIFunctions.clearMessages();
