@@ -18,8 +18,8 @@ window.UI = {
     messageInput,
     messagesBox,
     roomTitleHeading,
-    usersList
-    leaveStrangerBtn
+    usersList,
+    leaveStrangerBtn,
     skipStrangerBtn 
 };
 function styleUserButton(button, active) {
