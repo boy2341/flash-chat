@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FlashChat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+
+            ⚡ FlashChat
+
+        </div>
+
+        <div class="header-right">
+
+            <button id="searchBtn">
+
+                🔍
+
+            </button>
+
+            <div class="user-menu">
+
+                <button id="profileBtn">
+
+                    <img id="profileImage" src="/images/default-avatar.png" alt="Profile">
+
+                    <span id="dashboardUsername">
+
+
+                    </span>
+
+                    ▼
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="dashboard">
+
+        <!-- LEFT -->
+
+        <section class="left-panel">
+
+            <div class="welcome-card">
+
+                <h1>
+
+                    Welcome back,
+                    <span id="welcomeUser"></span>
+                    👋
+
+                </h1>
+
+                <p>
+
+                    Start a private conversation, discover communities,
+                    or meet someone new.
+
+                </p>
+
+            </div>
+            <!-- Stranger -->
+
+            <div class="stranger-card">
+
+                <div class="stranger-top">
+
+                    <div>
+
+                        <h2>
+
+                            🎲 Stranger Chat
+
+                        </h2>
+
+                        <p>
+
+                            Instantly connect with someone new.
+
+                        </p>
+
+                    </div>
+
+                    <div class="live-dot"></div>
+
+                </div>
+
+                <button id="dashboardStrangerBtn" class="btn btn-primary">
+
+                    Start Chat →
+
+                </button>
+
+            </div>
+
+            <!-- Communities -->
+
+            <div class="community-section">
+                <h2>Communities</h2>
+                <div id="communityGrid">
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+        <!-- RIGHT -->
+
+        <aside class="right-panel">
+
+            <div class="friends-card">
+
+                <h2>
+
+                    Friends
+
+                </h2>
+
+                <div id="friendsList">
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- PROFILE DROPDOWN -->
+
+    <div id="profileDropdown">
+
+        <button id="changePhoto">
+
+            📷 Change Profile Picture
+
+        </button>
+
+        <button id="changeUsername">
+
+            ✏ Change Username
+
+        </button>
+
+        <button id="logoutBtn">
+
+            🚪 Logout
+
+        </button>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+
+
+    <script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>

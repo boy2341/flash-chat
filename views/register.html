@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FlashChat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+
+<body class="login-page">
+
+    <div class="login-wrapper">
+        <div class="login-brand">
+            <div class="logo-icon">⚡</div>
+            <h1>FlashChat</h1>
+            <p>Create an account to join the conversation.</p>
+        </div>
+
+        <div class="login-card card">
+            <div id="usernameSection" class="input-group">
+                <label for="usernameInput">Username</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">@</span>
+                    <input type="text" id="usernameInput" placeholder="e.g. CoolUser99" autocomplete="username"
+                        required>
+                </div>
+            </div>
+
+            <div id="passwordSection" class="input-group">
+                <label for="passwordInput">Password</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" id="passwordInput" placeholder="At least 6 characters"
+                        autocomplete="new-password" required>
+                </div>
+            </div>
+
+            <div id="confirmPasswordSection" class="input-group">
+                <label for="confirmPasswordInput">Confirm Password</label>
+                <div class="input-wrapper">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" id="confirmPasswordInput" placeholder="Retype your password"
+                        autocomplete="new-password" required>
+                </div>
+            </div>
+
+            <p id="errorMessage" class="form-error"></p>
+
+            <button id="continueBtn" class="btn btn-primary login-btn">
+                Create Account →
+            </button>
+
+            <p class="switch-link">
+                Already have an account? <a href="/views/login.html">Log In</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="/register.js"></script>
+</body>
+
+</html>

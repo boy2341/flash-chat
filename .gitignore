@@ -1,0 +1,22 @@
+# Secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Dependencies — regenerated from package.json via npm install
+node_modules/
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build/cache artifacts (if you add a bundler later)
+dist/
+build/
+.cache/
